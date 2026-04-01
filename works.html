@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | CPLIN's Art Studio</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        body {
+            background-color: #000; /* 延續首頁的深邃黑 */
+            color: #fff;
+            font-family: "Noto Serif TC", serif; /* 建議使用有質感的襯線體 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #888;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .menu-item {
+            text-decoration: none;
+            color: #aaa;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            padding: 10px;
+            border-bottom: 1px solid transparent;
+            transition: all 0.5s ease;
+            display: block;
+        }
+
+        .menu-item:hover {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            letter-spacing: 0.3rem; /* 懸停時輕微伸展，增加空間感 */
+        }
+
+        .menu-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 40px;
+            color: #444;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-link">←</a>
+    </header>
+
+    <h1>Sora Kai</h1>
+
+    <nav class="menu-container">
+        <a href="visual-art.html" class="menu-item">
+            Visual Art <span>視覺藝術</span>
+        </a>
+        <a href="writing.html" class="menu-item">
+            Writing <span>書寫</span>
+        </a>
+        <a href="special-feature.html" class="menu-item">
+            Special Feature <span>專題撰稿</span>
+        </a>
+        <a href="translating.html" class="menu-item">
+            Translating <span>譯作</span>
+        </a>
+        <a href="theater.html" class="menu-item">
+            Theater <span>劇場軌跡</span>
+        </a>
+        <a href="about.html" class="menu-item">
+            About <span>關於</span>
+        </a>
+    </nav>
+
+    <footer>
+        CPLIN &copy; 2026
+    </footer>
+
+</body>
+</html>

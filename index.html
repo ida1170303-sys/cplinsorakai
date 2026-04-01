@@ -1,1 +1,120 @@
-<h1>CPLIN's Art Studio 測試中</h1>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPLIN</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+                   "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 100svh;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      display: block;
+      filter: brightness(0.82);
+      transform: scale(1.01);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.28));
+    }
+
+    .content {
+      position: absolute;
+      left: 50%;
+      bottom: 11%;
+      transform: translateX(-50%);
+      text-align: center;
+      padding: 0 24px;
+      width: min(92vw, 900px);
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 3.6vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      line-height: 1.35;
+      text-shadow: 0 2px 16px rgba(0,0,0,0.35);
+    }
+
+    .enter {
+      display: inline-block;
+      margin-top: 22px;
+      color: rgba(255,255,255,0.88);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.18em;
+      border-bottom: 1px solid rgba(255,255,255,0.5);
+      padding-bottom: 6px;
+      transition: opacity 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .enter:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,0.95);
+    }
+
+    .signature {
+      position: absolute;
+      right: 18px;
+      bottom: 16px;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      color: rgba(255,255,255,0.58);
+    }
+
+    @media (max-width: 640px) {
+      .content {
+        bottom: 9%;
+      }
+
+      h1 {
+        letter-spacing: 0.05em;
+      }
+
+      .enter {
+        margin-top: 18px;
+        font-size: 0.88rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <img src="hero.jpg" alt="首頁主視覺" />
+    <div class="overlay"></div>
+
+    <section class="content" aria-label="首頁標語">
+  <h1>歡迎走進我的小宇宙</h1>
+  <a class="enter" href="works.html">ENTER</a>
+</section>
+
+    <div class="signature">CPLIN</div>
+  </main>
+</body>
+</html>
