@@ -6,74 +6,45 @@
     <title>Works | CPLIN's Art Studio</title>
     <link rel="stylesheet" href="style.css"> <style>
         body {
-            background-color: #000; /* 延續首頁的深邃黑 */
-            color: #fff;
-            font-family: "Noto Serif TC", serif; /* 建議使用有質感的襯線體 */
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
+    /* 使用深藍、深綠與黑色的徑向漸層，模擬宇宙星雲感 */
+    background: radial-gradient(circle at center, #0a2e2e 0%, #051a1d 50%, #000000 100%);
+    background-attachment: fixed; /* 讓背景固定，滾動時更有深度感 */
+    color: #e0f2f1; /* 稍微帶一點點青色的白，讓文字更柔和 */
+    font-family: "Noto Serif TC", serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 
-        header {
-            width: 100%;
-            padding: 20px;
-            display: flex;
-            justify-content: flex-start;
-        }
+/* 調整選單項目的顏色，使其在藍綠背景下更和諧 */
+.menu-item {
+    text-decoration: none;
+    color: #80cbc4; /* 淡淡的海水綠 */
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease;
+    display: block;
+}
 
-        .back-link {
-            text-decoration: none;
-            color: #888;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
+.menu-item:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #80cbc4;
+    text-shadow: 0 0 8px rgba(128, 203, 196, 0.6); /* 增加一點點發光感 */
+    letter-spacing: 0.3rem;
+}
 
-        .back-link:hover {
-            color: #fff;
-        }
-
-        h1 {
-            font-weight: 300;
-            letter-spacing: 0.2rem;
-            margin-top: 40px;
-            margin-bottom: 60px;
-        }
-
-        .menu-container {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            text-align: center;
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .menu-item {
-            text-decoration: none;
-            color: #aaa;
-            font-size: 1.2rem;
-            letter-spacing: 0.1rem;
-            padding: 10px;
-            border-bottom: 1px solid transparent;
-            transition: all 0.5s ease;
-            display: block;
-        }
-
-        .menu-item:hover {
-            color: #fff;
-            border-bottom: 1px solid #fff;
-            letter-spacing: 0.3rem; /* 懸停時輕微伸展，增加空間感 */
-        }
-
-        .menu-item span {
-            display: block;
-            font-size: 0.9rem;
-            color: #666;
-            margin-top: 5px;
-        }
+.menu-item span {
+    display: block;
+    font-size: 0.9rem;
+    color: #4d827d; /* 較深暗的綠，保持層次 */
+    margin-top: 5px;
+}
 
         footer {
             margin-top: auto;
