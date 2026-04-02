@@ -2,90 +2,37 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Works | CPLIN's Art Studio</title>
-    <link rel="stylesheet" href="style.css"> <style>
-        body {
-    /* 使用深藍、深綠與黑色的徑向漸層，模擬宇宙星雲感 */
-    background: radial-gradient(circle at center, #0a2e2e 0%, #051a1d 50%, #000000 100%);
-    background-attachment: fixed; /* 讓背景固定，滾動時更有深度感 */
-    color: #e0f2f1; /* 稍微帶一點點青色的白，讓文字更柔和 */
-    font-family: "Noto Serif TC", serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
-
-/* 調整選單項目的顏色，使其在藍綠背景下更和諧 */
-.menu-item {
-    text-decoration: none;
-    color: #80cbc4; /* 淡淡的海水綠 */
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    padding: 10px;
-    border-bottom: 1px solid transparent;
-    transition: all 0.5s ease;
-    display: block;
-}
-
-.menu-item:hover {
-    color: #ffffff;
-    border-bottom: 1px solid #80cbc4;
-    text-shadow: 0 0 8px rgba(128, 203, 196, 0.6); /* 增加一點點發光感 */
-    letter-spacing: 0.3rem;
-}
-
-.menu-item span {
-    display: block;
-    font-size: 0.9rem;
-    color: #4d827d; /* 較深暗的綠，保持層次 */
-    margin-top: 5px;
-}
-
-        footer {
-            margin-top: auto;
-            padding: 40px;
-            color: #444;
-            font-size: 0.8rem;
-        }
-    </style>
+    <title>Works | Sora Kai 的創作空間</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <a href="index.html" class="back-link">←</a>
-    </header>
-
-    <h1>Sora Kai</h1>
-
-    <nav class="menu-container">
-        <a href="visual-art.html" class="menu-item">
-            Visual Art <span>視覺藝術</span>
-        </a>
-        <a href="writing.html" class="menu-item">
-            Writing <span>書寫</span>
-        </a>
-        <a href="special-feature.html" class="menu-item">
-            Special Feature <span>專題撰稿</span>
-        </a>
-        <a href="translating.html" class="menu-item">
-            Translating <span>譯作</span>
-        </a>
-        <a href="theater.html" class="menu-item">
-            Theater <span>劇場軌跡</span>
-        </a>
-        <a href="about.html" class="menu-item">
-            About <span>關於</span>
-        </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="Works.html" class="active">作品展覽</a></li>
+            <li><a href="About.html">關於創作者</a></li>
+        </ul>
     </nav>
 
-    <footer>
-        CPLIN &copy; 2026
-    </footer>
+    <main class="works-container">
+        <header>
+            <h1>創作展示</h1>
+            <p>在這裡，我用色彩與文字構築世界。</p>
+        </header>
 
+        <section class="work-categories">
+            <div class="category-card">
+                <h2>視覺藝術 Visual Art</h2> [cite: 5, 8]
+                <p>涵蓋粉彩、壓克力、禪繞畫與數位創作。</p> [cite: 9, 10, 11, 12]
+                <a href="VisualArt.html" class="btn">進入藝廊</a>
+            </div>
+
+            <div class="category-card">
+                <h2>文字創作 Writing</h2> [cite: 6, 15]
+                <p>收錄詩作、工作筆記與散文隨筆。</p> [cite: 17, 20]
+                <a href="Writing.html" class="btn">閱讀文字</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
